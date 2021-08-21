@@ -1,8 +1,43 @@
-*{font-family:sans-serif;}
+.settings {
+    display: block;
+   
+  }
+  
+  #paint{
+      top: 10%;
+      border: 1px solid black ; 
+      margin-left: auto; 
+      margin-right: auto; 
+      display: block; 
+      background : white
+  }
+  
 
-#settings { display: block; text-align:center}
+  
+  .button {
+    background-color: #6dc283;
+   
+    color: white;
+    font-family: inherit;
+    border: 1px;
+    border-color: #94daa7;
+   margin-top: 15px;
+
+    margin-left:8px; 
+    margin-right: auto;
+    font-size: 30px;
+  }
+  
+  .button:hover {
+    background-color: #94daa7;
+  }
+  
+  .text {
+      text-align: left;
+  }
+  
+  .img {
 
 
-#paint {border: 1px solid black;
-
-     margin-left: auto; margin-right: auto; display: block;}
+    width: 35%;
+  }
