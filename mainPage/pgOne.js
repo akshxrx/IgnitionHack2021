@@ -16,8 +16,8 @@
     }
     else
     {
-        window.open("https://www.youtube.com/watch?v=XZeqK7IMrXU", "_blank");
-        // window.location.href = "";
+        // window.open("hoppy.html", "_blank");
+        window.location.href = "hoppy.html";
     }
   }
 
