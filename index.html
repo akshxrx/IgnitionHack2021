@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage/pgOne.css">
+    <script src="mainPage/pgOne.js"></script>
+    <title>Focus Aid</title>
+    <link rel="icon" href="mainPage/icon.png">
+</head>
+<body>
+    <div class="main">
+
+        <div class="square">
+            <h2 class="q qOne">
+                What are your goals today?
+            </h2>
+            <form action="/action_page.php" class="cb">
+                <input type="checkbox" value="focused" id="checkboxForm">
+                <label for="q1"> be focused </label><br>
+                <input type="checkbox" value="motivated" id="checkbox">
+                <label for="q2"> be motivated </label><br>
+                <input type="checkbox" value="calm" id="checkbox">
+                <label for="q3"> be calm/relax </label><br>
+                <input type="checkbox" value="creative" id="checkbox">
+                <label for="q4"> be creative </label><br>
+            </form>
+
+            <h2 class="q qTwo">
+                How do you feel currently?
+            </h2>
+            <form action="/action_page.php" class="cb" id="checkboxForm">
+                <input type="checkbox" value="distracted" id="checkbox">
+                <label for="q1"> distracted </label><br>
+                <input type="checkbox" value="stressed" id="checkbox">
+                <label for="q2"> stressed </label><br>
+                <input type="checkbox" value="unhappy" id="checkbox">
+                <label for="q3"> unhappy </label><br>
+                <input type="checkbox" value="creative" id="checkbox">
+                <label for="q4"> unaccomplished </label><br>
+            </form>
+
+            <h2 class="q qThree" >
+                What makes you feel that way?
+            </h2>
+            <form action="/action_page.php" class="cb" id="checkboxForm">
+                <input type="checkbox" value="distracted" id="checkbox">
+                <label for="q1"> happy moments </label><br>
+                <input type="checkbox" value="stressed" id="checkbox">
+                <label for="q2"> indifference </label><br>
+                <input type="checkbox" value="unhappy" id="checkbox">
+                <label for="q3"> treasured memories </label><br>
+                <input type="checkbox" value="creative" id="checkbox">
+                <label for="q4"> sad traumas </label><br>
+            </form>
+        </div>
+
+        <div class="bQues">
+        <h1 class="ques" onmouseover="play('twoPiano')" onmouseout="pause('twoPiano')">
+            I would like to feel while studying:
+        </h1>
+            <button onclick="hoppy()" class="btn btn-outline-light button"> hoppy </button>
+            <button onclick="sadge()" class="btn btn-outline-light button"> sadge </button>
+        </div>
+
+    </div> 
+</body>
+</html>

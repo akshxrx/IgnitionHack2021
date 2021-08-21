@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+html {
+    /* background-color: #94daa7; */
+    overflow: hidden;
+    background-image: url("../mainPage/back.png");
+}
+
+
+.square{
+    background-color: #6dc283;
+    width: 40em;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    padding: 2em;
+}
+
+.cb{
+    margin-left:2em;
+    position: relative;
+}
+
+.q{
+    display: flex;
+    animation: typing 2.5s steps(33,end), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #ed7d78;   
+    letter-spacing: .15em;
+    padding-top: 0.5em;
+    font-size: 1.5em;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to{ 
+        width: 70%
+    }
+}
+      
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #ed7d78; }
+}
+
+.qOne{
+    width: 20em;
+}
+
+.qTwo{
+    width: 20em;
+}
+
+.qThree{
+    width: 22em;
+}
+
+.bQues{
+    background-color: #6dc283;
+    width: 48em;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    padding: 1em;
+    text-align: center;
+}
+
+.ques{
+    font-size: 2em;
+}
+
+.button{
+    position: relative;
+    margin-top: 0.5em;
+    width: 10em;
+    border-radius: 0em;
+}
+
+.button:hover{
+    color: #ed7d78;
+}
