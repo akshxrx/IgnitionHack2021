@@ -7,11 +7,18 @@
     <title>Focus Aid</title>
     <link rel="stylesheet" href="hoppy/back.css">
     <link rel="stylesheet" href="hoppy/song.css">
+    <link rel="stylesheet" href="hoppy/sound.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="mainPage/icon.png">
 </head>
 <body>
     <div class="main">
+        <div class="sounds">
+          <button onclick="playth(thunder, '#thunder')" class="thunder" title="Thunder" id="thunder"></button>
+          <button onclick="play(city, '#city')" class="city" title="city" id="city"></button>
+          <button onclick="play(ocean, '#ocean')" class="ocean" title="ocean" id="ocean"></button>
+          <button onclick="play(birds, '#birds')" class="birds" title="birds" id="birds"></button>
+        </div>
 
         <div class="wrapper">
             <div class="img-area">
@@ -58,7 +65,7 @@
             </div>
         </div>
 
-
+        <script src="hoppy/sound.js"></script>
         <script src="hoppy/songs.js"></script>
         <script src="hoppy/song-function.js"></script>
     </div>

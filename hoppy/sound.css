@@ -1,0 +1,70 @@
+.sounds{
+    width: 9em;
+    height: 2.5em;
+    padding: 1em 2em 1em;
+    overflow: hidden;
+    position: absolute;
+    background: black;
+    left: 3em;
+    top: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 6px 12px#7f807f;
+
+}
+
+.thunder{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    width: 2.8em;
+    height: 2.8em;
+    left: 1.5em;
+    top: 1.25em;
+    position: absolute;
+    background-image: url("../hoppy/soundIcon/thunder.png");
+    background-size: cover;
+    background-color: transparent;
+    border: 0px;
+}
+
+.city{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    opacity: 0.9;
+    width: 2.8em;
+    height: 2.8em;
+    left: 4.9em;
+    top: 1.25em;
+    position: absolute;
+    background-image: url("../hoppy/soundIcon/city.png");
+    background-size: cover;
+    background-color: transparent;
+    border: 0px;
+}
+
+.ocean{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    width: 2.8em;
+    height: 2.8em;
+    left: 8.5em;
+    top: 1.25em;
+    position: absolute;
+    background-image: url("../hoppy/soundIcon/ocean.png");
+    background-size: cover;
+    background-color: transparent;
+    border: 0px;
+}
+
+.birds{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    width: 2.5em;
+    height: 2.5em;
+    left: 11.6em;
+    top: 1.25em;
+    position: absolute;
+    background-image: url("../hoppy/soundIcon/birds.png");
+    background-size: cover;
+    background-color: transparent;
+    border: 0px;
+}
