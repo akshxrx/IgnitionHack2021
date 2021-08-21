@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus Aid</title>
-    <link rel="stylesheet" href="drawingcss.css">
-    <link rel="stylesheet" href="back.css">
+    <link rel="stylesheet" href="hoppy/drawingcss.css">
+    <link rel="stylesheet" href="hoppy/back.css">
     <link rel="icon" href="mainPage/icon.png">
 
 </head>
@@ -21,8 +21,8 @@
 </div>
    
    <div class="settings"> Colour:
-     <button class="button" onclick="getColor('black');">Black</button>
-     <button class="button" onclick="getColor('red');">Red</button>
+     <button class="button black" onclick="getColor('black');">Black</button>
+     <button class="button red" onclick="getColor('red');">Red</button>
      <button class="button" onclick="getColor('orange');">Orange</button>
      <button class="button" onclick="getColor('yellow');">Yellow</button>
      <button class="button" onclick="getColor('green');">Green</button>
@@ -40,18 +40,20 @@
    </div>
    <p> Or add the hex of your own colour! </p>
    <div class="code">
-     <input id="hex" placeholder="#hex"></input>
-   </div>  
-     <canvas id="draw"></canvas>
-   
+    <input id="hex" placeholder="enter hex color"></input>
+    <canvas id="draw"></canvas>
+  
+    <script src="hoppy/script.js"></script>
+  
+    </html>
    
    <body>
            <div id="container">
-               <canvas id="imageView" width="400" height="300">
+               <canvas id="imageView" width="1400" height="1300">
                    
                </canvas>
            </div>
-           <script src="script.js"></script>
+           <script src="hoppy/script.js"></script>
        </body>
       
 

@@ -21,7 +21,7 @@ body{
     overflow: hidden !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-color: cadetblue !important;
+    background-color: #94daa7;
     /* background-image: url(''); */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -1,6 +1,7 @@
 
 .settings {
     display: block;
+    text-shadow: #94daa7;
    
   }
   
@@ -16,21 +17,31 @@
 
   
   .button {
-    background-color: #6dc283;
    
-    color: white;
-    font-family: inherit;
+   
+    background-color: #6dc283;
+    color:azure;
+    font-family: 'Courier New', Courier, monospace;
     border: 1px;
     border-color: #94daa7;
    margin-top: 15px;
+  
+  
 
     margin-left:8px; 
     margin-right: auto;
     font-size: 30px;
   }
+
+  /* .black{
+      background-image: url("../hoppy/black-square.png");
+      height: 2 em;
+      width: 2 em;
+
+  } */
   
   .button:hover {
-    background-color: #94daa7;
+    background-color: #99cf8c;
   }
   
   .text {
