@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="hoppy/back.css">
     <link rel="stylesheet" href="hoppy/song.css">
     <link rel="stylesheet" href="hoppy/sound.css">
+    <link rel="stylesheet" href="hoppy/todo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="mainPage/icon.png">
 </head>
@@ -65,8 +66,59 @@
             </div>
         </div>
 
+        <div class="square-wrapper"> 
+          <div class="all-tasks">
+          <h2 class="task-list-title">My lists</h2>
+          <ul class="task-list" data-lists></ul>   
+          <form action="" data-new-list-form>
+              <input 
+              type="text"
+              class="new list"
+              data-new-list-input
+              placeholder="new list name"
+              aria-label="new list name"/>
+              <button class="btn create" aria-label="create new list">+</button>
+          </form>
+          </div>
+          <div class="todo-list" data-list-display-container>
+          <div class="todo-header">
+              <h2 class="list-title" data-list-title>List</h2>
+              <p class="task-count" data-list-count>0 left</p>
+          </div>
+          <div class="todo-body">
+              <div class="tasks" data-tasks></div>      
+              <div class="new-task-creator">
+                  <form action="" data-new-task-form>
+                      <input 
+                      type="text"
+                      data-new-task-input
+                      class="new task"
+                      placeholder="new task name"
+                      aria-label="new task name"
+                      />
+                      <button class="btn create" aria-label="create new task">+</button>
+                  </form>
+              </div>
+              <div class="delete-stuff">
+              <button class="btn delete done" data-clear-complete-tasks-button>Clear completed tasks</button>
+              <button class="btn delete dtwo" data-delete-list-button>Delete list</button>
+              </div>
+          </div>
+          </div>
+          </div>
+          <template id="task-template">
+            <div class="task">
+                <input type="checkbox" />
+                <label>
+                <span class="custom-checkbox"></span>
+                </label>
+            </div>
+          </template>
+        </div>
+
         <script src="hoppy/sound.js"></script>
         <script src="hoppy/songs.js"></script>
+        <script src="hoppy/todo.js"></script>
         <script src="hoppy/song-function.js"></script>
     </div>
 </body>

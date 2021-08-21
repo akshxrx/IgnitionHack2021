@@ -1,0 +1,329 @@
+:root {
+    --clr-primary: rgb(0, 0, 0);
+    --clr-light: #f3f0e8dc;
+    --clr-dark: #333;
+  }
+
+  .all-tasks {
+    grid-area: lists;
+  }
+  
+  .task-list {
+    font-size: 1rem;
+    line-height: 1.5;
+    list-style: circle;
+    padding-left: 4.3em;
+  }
+  
+  .task-list-title{
+    margin-left:1em;
+    font-size: 1.6rem;
+    padding-left: 0em;
+    font-weight:300;
+    padding-bottom: 0.5em;
+  }
+  
+  .list-name {
+    cursor: pointer;
+  }
+  
+  .list-name:hover {
+    opacity: 0.7;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: #6dc283;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .btn.create {
+    color: #acebbc;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+    transition: opacity 250ms ease-in;
+    margin-top: 0.1em;
+    margin-left: 1.5em;
+  }
+  
+  .btn.create:hover {
+    opacity: 0.7;
+  }
+  
+  .done{
+    margin-left: -3em;
+    width: 15em;
+    color: white;
+
+  }
+
+  .dtwo{
+    margin-left: 13em;
+    width: 10em;
+        color: white;
+
+  }
+
+  .btn.delete {
+    font-weight: 500;
+    opacity: 0.5;
+    font-size: 1rem;
+    transition: color 200ms;
+    margin-top: 1em;
+    padding: 0.5em 0.5em 1em;
+    position: absolute;
+    height: 2.5em;
+    background-color: rgb(8, 8, 8);
+    border-radius: 1em;
+  }
+  
+  .btn.delete:hover {
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  
+  @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #878586, 0 0 40px #878586, 0 0 50px #878586, 0 0 60px #878586, 0 0 70px #878586;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #f1dbe6, 0 0 40px #f1dbe6, 0 0 50px #f1dbe6, 0 0 60px #f1dbe6, 0 0 70px #f1dbe6, 0 0 80px #f1dbe6;
+      }
+  }
+  
+  .new {
+    background: transparent;
+    border: 0;
+    color: #6dc283;
+    border-bottom: 0px solid currentColor;
+    font-size: 1rem;
+    outline: none;
+    padding: 1em 0.5em 1em;
+    transition: border-bottom 150ms ease-in;
+    order: 2;
+  }
+  
+  .new::-webkit-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new:-ms-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new::-ms-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new::placeholder {
+    opacity: 0.4;
+  }
+  
+  .new:focus {
+    border-bottom-width: 3px;
+  }
+  
+  .new:focus::-webkit-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus:-ms-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus::-ms-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus::placeholder {
+    opacity: 0.15;
+  }
+  
+  .new.list {
+    font-size: 1.3rem;
+    width: 12em;
+  }
+  
+  .new.task {
+    margin-bottom: 0;
+  }
+  
+  .active-list {
+    font-weight: 700;
+  }
+  
+  .todo-list {
+    --spacer: 1.3rem;
+    grid-area: active;
+    background: #91e4a7;
+    color: var(--clr-dark);    
+    border-radius: 1em;
+
+  }
+  
+  .todo-header {
+    padding: 0.8em 2em 0.7em;
+    background:transparent;
+    color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+  }
+  
+  .list-title {
+    margin: 0 1em 0 0;
+  }
+  
+  .task-count {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .todo-body {
+    background: #e4e4e4;
+    padding: var(--spacer);
+    position: relative;
+    margin-left: 1em;
+    border-radius: 1em;
+
+  }
+  
+  .new-task-creator .create {
+    color: var(--clr-primary);
+  }
+  
+  [type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .task label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .task {
+    position: relative;
+    margin-bottom: 0.8em;
+    font-size: 0.9rem;
+    padding-left: 2rem;
+  
+  }
+  
+  .task::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -0.5em;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.1;
+    color: #acebbc;
+
+  }
+  
+  .custom-checkbox {
+    margin-top:1em;
+    --size: 0.6em;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  }
+  
+  .task:hover .custom-checkbox,
+  [type="checkbox"]:focus + label .custom-checkbox {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: var(--clr-primary);
+  }
+  
+  [type="checkbox"]:checked + label .custom-checkbox {
+    background: var(--clr-primary);
+    border-color: var(--clr-primary);
+    box-shadow: inset 0 0 0px 2px white;
+  }
+  
+  [type="checkbox"]:checked + label {
+    opacity: 0.5;
+    color: #6dc283;
+
+  }
+  
+  .task label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    left: 0em;
+    top: 50%;
+    height: 3px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  }
+  
+  [type="checkbox"]:checked + label::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  
+  .delete-stuff {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    color: var(--clr-light);
+  }
+  
+  .square-wrapper{
+    width: 25em;
+    height: auto;
+    padding: 1em 1em 1em;
+    position: absolute;
+    background: black;
+    left: 30em;
+    bottom: 6em;
+    border-radius: 1em;
+    /* bottom: 0;
+    display: flex;
+    align-items: right;
+    padding: 1.6em 0em 5.2em;
+    height:auto;
+    width:40em;
+    background-color: rgba(23, 23, 23, 0.381);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--clr-light); */
+    
+  }
