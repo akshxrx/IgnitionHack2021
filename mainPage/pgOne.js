@@ -10,7 +10,7 @@
     sound.currentTime=0;
   }
 
-  function sadge() {
+  function hoppy() {
     if (!document.getElementById("checkbox").checked) {
         alert("Please check few boxes for the best result");
     }
