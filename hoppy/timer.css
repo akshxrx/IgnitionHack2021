@@ -14,8 +14,8 @@ body{
 	padding: 0;
 	margin: 0;
 	background: white;
-	font-family: 'Poppins', sans-serif;
-
+	font-family: 'Courier New', Courier, monospace
+ 
 }
 
 header{
@@ -41,7 +41,8 @@ header{
 	color: #fff;
 	font-size: 3rem;
 	text-transform: uppercase;
-  top:2em;
+  top:12em;
+  font-family: 'Courier New', Courier, monospace
 }
 
 .btn{
@@ -51,23 +52,22 @@ header{
 	outline: none;
 	cursor: pointer;
 	border-radius: 4px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 700;
-  top:2em;
+	font-family: 'Courier New', Courier, monospace
+
 }
 
 .start{
 	color: rgb(126, 245, 144);
-  top: 42px;
+  top: 142px;
 }
 .stop{
 	color: rgb(218, 23, 23);
-  top: 42px;
+  top: 142px;
 }
 
 #continue, .stop, #start{
 	display: none;
+  top: 42px;
 }
 
 
@@ -77,25 +77,30 @@ header{
 	outline: none;
 	border: none;
 	border-bottom: 4px solid #fff;
-	padding: 1rem;
 	font-size: 2rem;
 	color: white;
-  top:3em;
+  top: 42px;
+  font-family: 'Courier New', Courier, monospace
 }
 
 #seconds::placeholder{
-	color: #ddd;
+	color: rgb(173, 228, 148);
+  top: 42px;
 }
 .timerwrapper{
   width: 22em;
-  height: 16em;
+  height: 30em;
   padding: 1em 2em 1em;
   position: absolute;
   background: black;
-  left: 3em;
-  top:2em;
+  left: 10em;
+  
+  bottom: 0 em;
   border-radius: 1em;
 }
 .counter{
-  top:2em;
+  top: 42px;
+}
+.seconds{
+  top: 42px;
 }
