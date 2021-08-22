@@ -17,7 +17,7 @@
     else
     {
         // window.open("sadge.html", "_blank");
-        window.location.href = "sadge.html";
+        window.location.href = "hoppy.html";
     }
   }
 
