@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="hoppy/song.css">
     <link rel="stylesheet" href="hoppy/sound.css">
     <link rel="stylesheet" href="hoppy/todo.css">
+    <link rel="stylesheet" href="hoppy/drawingPad.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="mainPage/icon.png">
 </head>
@@ -116,9 +117,36 @@
           </template>
         </div>
 
+        <div class="drawingPad">
+          <div id="sketch">
+            <canvas id="paint"></canvas>
+          </div>
+          
+          <div id="settings">
+            <button onclick="getColor('blue');" class="blue"> </button>
+            <button onclick="getColor('red');" class="red"></button>
+            <button onclick="getColor('green');" class="green"></button>
+            <button onclick="getColor('white');" class="white"></button>
+            <button onclick="getColor('orange');" class="orange"></button>
+            <button onclick="getColor('yellow');" class="yellow"></button>
+            <button onclick="getColor('purple');" class="purple"></button>
+            <button onclick="getColor('black');" class="black"></button>
+
+          </div>
+          
+          <div id="settingsone">
+            <button onclick="getSize('2');" class="small"></button></button>
+            <button onclick="getSize('5');" class="med"></button>
+            <button onclick="getSize('10');" class="large"></button>
+            <button onclick="getSize('20');" class="xl"></button>
+          </div>
+            
+        </div>
+
         <script src="hoppy/sound.js"></script>
         <script src="hoppy/songs.js"></script>
         <script src="hoppy/todo.js"></script>
+        <script src="hoppy/drawingPad.js"></script>
         <script src="hoppy/song-function.js"></script>
     </div>
 </body>

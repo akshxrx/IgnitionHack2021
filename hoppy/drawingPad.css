@@ -1,0 +1,127 @@
+.drawingPad{
+  width: 22em;
+  height: 17em;
+  padding: 1.5em 2em 2em;
+  position: absolute;
+  background: black;
+  left: 3em;
+  top:2em;
+  border-radius: 1em;
+  box-shadow: 0px 6px 12px#7f807f;
+}
+
+*{font-family:'Courier New', Courier, monospace;}
+
+#settings { display: block; text-align:center; padding-top: 1em;}
+#settingsone{ display: block; text-align:center; padding-right: 0.5em; padding-top: 0.5em;}
+
+
+#paint {border: 1px solid white; background : white; margin-left: auto; margin-right: auto; display: block; width: 22em; border-radius: 1em; padding-bottom: 1em;}
+
+.blue{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: blue;
+}
+
+.red{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: red;
+}
+
+.green{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: green;
+}
+
+.white{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.orange{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: orange;
+}
+
+.yellow{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: yellow;
+}
+
+.purple{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: purple;
+}
+
+.black{
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: black;
+}
+
+.small{
+  height: 2.5em;
+  width: 0.2em;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  display: inline-block;
+  border-radius: 0.5em;
+  color: #6dc283;
+  border: #6dc283;
+  margin-right: 0.3em;
+}
+
+.med{
+  height: 2.5em;
+  width: 0.5em;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  display: inline-block;
+  border-radius: 0.5em;
+  color: #6dc283;
+  border: #6dc283;
+  margin-right: 0.3em;
+}
+
+.large{
+  height: 2.5em;
+  width: 1em;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  display: inline-block;
+  border-radius: 0.5em;
+  color: #6dc283;
+  border: #6dc283;
+  margin-right: 0.3em;
+}
+
+.xl{
+  height: 2.5em;
+  width: 1.5em;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  display: inline-block;
+  border-radius: 0.5em;
+  color: #6dc283;
+  border: #6dc283;
+  margin-right: 0.3em;
+}
