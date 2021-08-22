@@ -16,7 +16,10 @@ Our submission: https://devpost.com/software/focus-aid?ref_content=user-portfoli
 ** **
 # Navigating Website
 Start by answering few questions which will help AI generate a perfect page for you!
+
 You have to choose ***to be focused*** since, this is a focusing website!
+
+After that play around with the site and enjoy every activities offered!
 
 # Authors
 
