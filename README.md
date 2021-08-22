@@ -5,7 +5,7 @@ Our website is designed to **assist students to focus better while learning**. I
 to those affected with ADHD, as the site provides various activities to **promote studying**.
 ** **
 ![banner](https://user-images.githubusercontent.com/70068533/130339371-82124cdc-69f8-48f0-b134-cd8a04dec2cb.png)
-![bannerII](https://user-images.githubusercontent.com/70068533/130339450-7857a87f-4c1a-44b3-9bb0-f35dccb213fb.PNG)
+![2021-08-22](https://user-images.githubusercontent.com/70068533/130344085-8a6cf67f-667e-4bf6-96c3-6e9f60da26be.png)
 ** **
 # Education assist!
 For Ignition Hack 2021 - Divison Delta - Education theme
