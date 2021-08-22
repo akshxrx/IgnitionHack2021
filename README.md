@@ -8,7 +8,7 @@ to those affected with ADHD, as the site provides various activities to **promot
 ![2021-08-22](https://user-images.githubusercontent.com/70068533/130344085-8a6cf67f-667e-4bf6-96c3-6e9f60da26be.png)
 ** **
 # Education assist!
-For Ignition Hack 2021 - Divison Delta - Education theme
+For Ignition Hack 2021 - Divison Delta - Education & Healthcare theme
 
 Visit the website: https://akshxrx.github.io/IgnitionHack2021/
 
