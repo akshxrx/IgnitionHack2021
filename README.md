@@ -14,6 +14,10 @@ Visit the website: https://akshxrx.github.io/IgnitionHack2021/
 
 Our submission: https://devpost.com/software/focus-aid?ref_content=user-portfolio&ref_feature=in_progress
 ** **
+# Navigating Website
+Start by answering few questions which will help AI generate a perfect page for you!
+You have to choose ***to be focused*** since, this is a focusing website!
+
 # Authors
 
 We are first-year CS students, who are interested in AI and Machine Learning. We both love the teaching 
