@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Aid</title>
+    <link rel="stylesheet" href="sadge/loader.css">
+    <link rel="stylesheet" href="sadge/back.css">
+    <link rel="stylesheet" href="sadge/song.css">
+    <link rel="stylesheet" href="sadge/sound.css">
+    <link rel="stylesheet" href="sadge/todo.css">
+    <link rel="stylesheet" href="sadge/drawingPad.css">
+    <link rel="stylesheet" href="sadge/AI.css">
+    <link rel="stylesheet" href="sadge/timer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="mainPage/icon.png">
+</head>
+<body>
+    <div class="main">
+        <div class="loader" id="loader">
+          <img src="../IgnitionHack2021/sadge/loader.gif" alt="" />
+        </div>
+
+        <div class="sounds">
+          <button onclick="playth(thunder, '#thunder')" class="thunder" title="Thunder" id="thunder"></button>
+          <button onclick="play(city, '#city')" class="city" title="city" id="city"></button>
+          <button onclick="play(ocean, '#ocean')" class="ocean" title="ocean" id="ocean"></button>
+          <button onclick="play(birds, '#birds')" class="birds" title="birds" id="birds"></button>
+        </div>
+
+        <div class="wrapper">
+            <div class="img-area">
+              <img src="" alt="">
+            </div>
+            <div class="song-details">   
+              <div id='stuff'> 
+              <p class="name"></p>
+              <p class="artist"></p>
+              </div> 
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+              </div>
+              <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+              </div>
+            </div>
+            <div class="controls">
+              <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+              <i id="prev" class="material-icons">skip_previous</i>
+              <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+              </div>
+              <i id="next" class="material-icons">skip_next</i>
+              <i id="more-music" class="material-icons">queue_music</i>
+              <div class="volume-slider-con">
+                <div class="volume-slider"></div>
+                </div>
+            </div>
+            <div class="music-list">
+              <div class="header">
+                <div class="row">
+                  <i class= "list material-icons">queue_music</i>
+                  <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+              </div>
+              <ul>
+                <!-- here li list are coming from js -->
+              </ul>
+            </div>
+        </div>
+
+        <div class="square-wrapper"> 
+          <div class="all-tasks">
+          <h2 class="task-list-title">My lists</h2>
+          <ul class="task-list" data-lists></ul>   
+          <form action="" data-new-list-form>
+              <input 
+              type="text"
+              class="new list"
+              data-new-list-input
+              placeholder="new list name"
+              aria-label="new list name"/>
+              <button class="btn create" aria-label="create new list">+</button>
+          </form>
+          </div>
+          <div class="todo-list" data-list-display-container>
+          <div class="todo-header">
+              <h2 class="list-title" data-list-title>List</h2>
+              <p class="task-count" data-list-count>0 left</p>
+          </div>
+          <div class="todo-body">
+              <div class="tasks" data-tasks></div>      
+              <div class="new-task-creator">
+                  <form action="" data-new-task-form>
+                      <input 
+                      type="text"
+                      data-new-task-input
+                      class="new task"
+                      placeholder="new task name"
+                      aria-label="new task name"
+                      />
+                      <button class="btn create" aria-label="create new task">+</button>
+                  </form>
+              </div>
+              <div class="delete-stuff">
+              <button class="btn delete done" data-clear-complete-tasks-button>Clear completed tasks</button>
+              <button class="btn delete dtwo" data-delete-list-button>Delete list</button>
+              </div>
+          </div>
+          </div>
+          </div>
+          <template id="task-template">
+            <div class="task">
+                <input type="checkbox" />
+                <label>
+                <span class="custom-checkbox"></span>
+                </label>
+            </div>
+          </template>
+        </div>
+
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>        
+            <div class="drawingPad">
+              <div id="sketch">
+                <canvas id="paint"></canvas>
+              </div>        
+              <div id="settings">
+                <button onclick="getColor('blue');" class="blue"> </button>
+                <button onclick="getColor('red');" class="red"></button>
+                <button onclick="getColor('green');" class="green"></button>
+                <button onclick="getColor('white');" class="white"></button>
+                <button onclick="getColor('orange');" class="orange"></button>
+                <button onclick="getColor('yellow');" class="yellow"></button>
+                <button onclick="getColor('purple');" class="purple"></button>
+                <button onclick="getColor('black');" class="black"></button>
+              </div>     
+              <div id="settingsone">
+                <button onclick="getSize('2');" class="small"></button></button>
+                <button onclick="getSize('5');" class="med"></button>
+                <button onclick="getSize('10');" class="large"></button>
+                <button onclick="getSize('20');" class="xl"></button>
+              </div>           
+          </div>
+          <div class ="timerwrapper">
+            <div class="contenttimer">
+                <h5 class="tittle"> let's study for... </h5>
+                <div class="counter tittle"></div>
+                <input id="seconds" type="number" placeholder="Seconds...">
+                <div class="buttons">
+                    <button class="btnt start" id="start" value="1" onclick="check(this)">Start</button>
+                    <button class="btnt start" id="continue" value="1" onclick="check(this)">Continue</button>
+                    <button class="btnt stop" id="stop" value="0" onclick="check(this)">Stop</button>
+                    <button class="btnt start" id="submit" onclick="subm()">Submit</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button> 
+
+        <div class="box">
+          <div class="mid">
+            <div class="chat">
+                <p id="chatLog">Let's Chat</p>
+            </div>
+          </div>
+          <div class="input inpbox">
+            <input type="text" id="userBox"onkeydown="if(event.keyCode == 13){ talk() }"placeholder="Type A Message">
+          </div>
+        </div>
+
+        <script src="sadge/loader.js"></script>
+        <script src="sadge/sound.js"></script>
+        <script src="sadge/songs.js"></script>
+        <script src="sadge/todo.js"></script>
+        <script src="sadge/drawingPad.js"></script>
+        <script src="sadge/AI.js"></script>
+        <script src="sadge/timer.js"></script>
+        <script src="sadge/song-function.js"></script>
+      </div>
+    
+
+
+</body>
+</html>

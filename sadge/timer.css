@@ -1,0 +1,87 @@
+
+.contenttimer{
+	height: 5em;
+	width: 7em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 3rem;
+	text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border-radius: 5em;
+    box-shadow: 0px 6px 12px#7f807f;
+
+
+}
+
+.btnt{
+	padding: 0.8rem 1.7rem;
+	background-color: #6dc283;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-family: 'Courier New', Courier, monospace;
+    border: 2px solid white;
+
+}
+
+.start{
+	color: #ffffff;
+  top: 142px;
+}
+.stop{
+    border: 2px solid #6dc283;
+    background-color: rgb(255, 255, 255);
+	color: #6dc283;
+    top: 142px;
+}
+
+#continue, .stop, #start{
+	display: none;
+    top: 42px;
+}
+
+
+#seconds{
+	width: 250px;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 4px solid #6dc283;
+	font-size: 1rem;
+	color: white;
+    top: 42px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+#seconds::placeholder{
+	color: #515753;
+  /* top: 42px; */
+}
+.timerwrapper{
+  width: 22em;
+  height: 18em;
+  padding: 1em 2em 1em;
+  position: absolute;
+  left: 28em;
+  top: 1em;
+
+}
+.counter{
+  top: 42px;
+}
+.seconds{
+  top: 42px;
+}
+
+.tittle{
+    font-size: 1.2rem;
+    padding-bottom: 0.8em;
+    font-weight: 300;
+}

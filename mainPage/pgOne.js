@@ -10,14 +10,14 @@
     sound.currentTime=0;
   }
 
-  function hoppy() {
+  function sadge() {
     if (!document.getElementById("checkbox").checked) {
         alert("Please check few boxes for the best result");
     }
     else
     {
-        // window.open("hoppy.html", "_blank");
-        window.location.href = "hoppy.html";
+        // window.open("sadge.html", "_blank");
+        window.location.href = "sadge.html";
     }
   }
 
@@ -27,7 +27,9 @@
     }
     else
     {
-        window.open("https://www.youtube.com/watch?v=XZeqK7IMrXU", "_blank");
+        // window.open("https://www.youtube.com/watch?v=XZeqK7IMrXU", "_blank");
         // window.location.href = "";
+        window.location.href = "sadge.html";
+
     }
   }
