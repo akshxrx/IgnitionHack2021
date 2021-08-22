@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="hoppy/sound.css">
     <link rel="stylesheet" href="hoppy/todo.css">
     <link rel="stylesheet" href="hoppy/drawingPad.css">
+    <link rel="stylesheet" href="hoppy/AI.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="mainPage/icon.png">
 </head>
@@ -148,11 +149,27 @@
         </div>
         <button class="openbtn" onclick="openNav()">☰</button> 
 
+        <div class="box">
+          <div style="text-align: center;" class="top">
+              <h1>Send A Message !</h1>
+          </div>
+          <div class="mid">
+            <div class="chat">
+                <h2>Answers Are Below</h2>
+                <p id="chatLog">Let's Chat</p>
+            </div>
+          </div>
+          <div class="input">
+            <input type="text" id="userBox"onkeydown="if(event.keyCode == 13){ talk() }"placeholder="Type A Message">
+          </div>
+        </div>
+
         <script src="hoppy/loader.js"></script>
         <script src="hoppy/sound.js"></script>
         <script src="hoppy/songs.js"></script>
         <script src="hoppy/todo.js"></script>
         <script src="hoppy/drawingPad.js"></script>
+        <script src="hoppy/AI.js"></script>
         <script src="hoppy/song-function.js"></script>
       </div>
     
