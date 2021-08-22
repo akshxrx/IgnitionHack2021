@@ -1,35 +1,26 @@
 .box{
-    width: 490px;
-    height: 350px;
-    box-shadow: 5px 5px 20px #000;
+    width: 23em;
+    height: 15em;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: -6em;
+    right: -1em;
     border-radius: 20px;
 }
-.top{
-    width: 100%;
-    height: 80px;
-    background: cyan;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.top h1{
-    margin: 0;
-    font-size: 30px;
-    color: crimson;
-    text-align: center;
-    padding-top: 10px;
-    font-family: sans-serif;
-}
+
 .mid{
-    width: 100%;
-    height: 150px;
-    background: yellow;
+    display: flex;
+    justify-content: left;
+    width: 70%;
+    height: 5%;
+    background: black; 
+    box-shadow: 5px 5px 20px #7f807f;   
+    border-radius: 3em;
+    padding: 1em;
+
 }
 .mid .chat{
     width: 100%;
+    padding-bottom: 2em;
 }
 .mid .chat h2{
     margin: 0;
@@ -40,27 +31,37 @@
 }
 .mid .chat p{
     margin: 0;
-    height: 30px;
-    font-size: 28px;
-    color: blue;
+    font-size: 1rem;
+    color: white;
     text-align: center;
-    background-color: yellow;
-    font-weight: 600;
+    background-color: black;
+    font-weight: 300;
     letter-spacing: 0.04em;
+    border-radius: 3em;
+
 }
 .input{
-    height:100%;
-    width: 489px;
+    height:20%;
+    width: 80%;
     overflow: hidden;
+    padding-top: 1em;
+
 }
 .input input{
     width: 100%;
-    height: 110px;
+    height: 2.5rem;
     outline: none;
     border: none;
     padding-left: 30px;
     padding-top:0;
-    font-family: monospace;
-    font-size: 50px;
-    background: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background:#94daa7;
+    border-radius: 3em;
+    box-shadow: 5px 5px 20px #7f807f;   
+
+}
+
+.inpbox{
+    border-radius: 2em;
 }
