@@ -42,3 +42,11 @@ var onPaint = function() {
     ctx.lineTo(mouse.x, mouse.y);
     ctx.stroke();
 };
+
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "30em";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
