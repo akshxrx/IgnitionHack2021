@@ -10,7 +10,7 @@ to those affected with ADHD, as the site provides various activities to **promot
 # Education assist!
 For Ignition Hack 2021 - Divison Delta - Education theme
 
-Visit the website: akshxrx.github.io/ignitionhack2021/
+Visit the website: https://akshxrx.github.io/IgnitionHack2021/
 
 Our submission: https://devpost.com/software/focus-aid?ref_content=user-portfolio&ref_feature=in_progress
 ** **
