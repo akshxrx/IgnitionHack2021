@@ -3,7 +3,7 @@
   height: 16em;
   padding: 1em 2em 1em;
   position: absolute;
-  background: black;
+  background: transparent;
   left: 3em;
   top:2em;
   border-radius: 1em;
@@ -15,7 +15,7 @@
 #settingsone{ display: block; text-align:center; padding-right: 0.5em; padding-top: 0.3em;}
 
 
-#paint {border: 1px solid white; background : white; margin-left: auto; margin-right: auto; display: block; width: 22em;height: 10em; border-radius: 1em; padding-bottom: 1em;}
+#paint {  box-shadow: 0px 6px 12px#7f807f; border: 0px solid white; background : rgb(0, 0, 0); margin-left: auto; margin-right: auto; display: block; width: 22em;height: 10em; border-radius: 1em; padding-bottom: 1em;}
 
 .blue{
   height: 2em;
@@ -82,7 +82,8 @@
   display: inline-block;
   border-radius: 0.5em;
   color: #6dc283;
-  border: #6dc283;
+  border: 1px solid #000000;
+  background-color: black;
   margin-right: 0.3em;
 }
 
@@ -95,7 +96,8 @@
   display: inline-block;
   border-radius: 0.5em;
   color: #6dc283;
-  border: #6dc283;
+  border: 1px solid #000000;
+  background-color: black;
   margin-right: 0.3em;
 }
 
@@ -108,7 +110,8 @@
   display: inline-block;
   border-radius: 0.5em;
   color: #6dc283;
-  border: #6dc283;
+  border: 1px solid #000000;
+  background-color: black;
   margin-right: 0.3em;
 }
 
@@ -121,7 +124,8 @@
   display: inline-block;
   border-radius: 0.5em;
   color: #6dc283;
-  border: #6dc283;
+  border: 1px solid #000000;
+  background-color: black;
   margin-right: 0.3em;
 }
 

@@ -52,6 +52,7 @@
     transition: opacity 250ms ease-in;
     margin-top: 0.1em;
     margin-left: 1.5em;
+    background-color: transparent;
   }
   
   .btn.create:hover {

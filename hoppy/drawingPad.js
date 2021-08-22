@@ -44,7 +44,7 @@ var onPaint = function() {
 };
 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "30em";
+    document.getElementById("mySidepanel").style.width = "70em";
   }
   
   function closeNav() {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="hoppy/todo.css">
     <link rel="stylesheet" href="hoppy/drawingPad.css">
     <link rel="stylesheet" href="hoppy/AI.css">
+    <link rel="stylesheet" href="hoppy/timer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="mainPage/icon.png">
 </head>
@@ -146,6 +147,19 @@
                 <button onclick="getSize('20');" class="xl"></button>
               </div>           
           </div>
+          <div class ="timerwrapper">
+            <div class="contenttimer">
+                <h5 class="tittle"> let's study for... </h5>
+                <div class="counter tittle"></div>
+                <input id="seconds" type="number" placeholder="Seconds...">
+                <div class="buttons">
+                    <button class="btnt start" id="start" value="1" onclick="check(this)">Start</button>
+                    <button class="btnt start" id="continue" value="1" onclick="check(this)">Continue</button>
+                    <button class="btnt stop" id="stop" value="0" onclick="check(this)">Stop</button>
+                    <button class="btnt start" id="submit" onclick="subm()">Submit</button>
+                </div>
+            </div>
+          </div>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button> 
 
@@ -166,6 +180,7 @@
         <script src="hoppy/todo.js"></script>
         <script src="hoppy/drawingPad.js"></script>
         <script src="hoppy/AI.js"></script>
+        <script src="hoppy/timer.js"></script>
         <script src="hoppy/song-function.js"></script>
       </div>
     
